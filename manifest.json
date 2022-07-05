@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+ 
+  "name": "HELLper",
+  "version": "0.0.1",
+  "description": "HELLper",
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+            "128": "icon128.png" },
+  "action": {
+      "default_title": "HELLper",
+      "default_popup": "popup.html",
+      "matches": ["http://ujiankampus.bsi.ac.id/*"]
+    }, 
+  "content_scripts": [
+    {
+      "js": ["fuck.js"],
+      "matches": ["http://ujiankampus.bsi.ac.id/*"]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["exam.js"],
+    "matches": ["<all_urls>"]
+  }]
+ 
+}
